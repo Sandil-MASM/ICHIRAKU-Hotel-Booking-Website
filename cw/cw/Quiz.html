@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Setting the viewport to make your website look good on all devices.
+    Reference: https://www.w3schools.com/css/css_rwd_viewport.asp -->
+
+	<!--Linking external style sheet-->
+	<link rel="stylesheet" href="Quiz.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+	<!--Google Fonts-->
+
+	<title>Quiz</title>
+</head>
+
+<body>
+	<!-- navigation bar -->
+	<header>
+		<div class="header_container">
+
+			<div class="logo">
+				<a href="main_page.html">
+					<img src="logo_student3.png" alt="logo">
+				</a>
+			</div>
+
+			<ul class="nav_list">
+				<li><a href="main_page.html">Home</a></li>
+				<li><a href="booking.html">Booking</a></li>
+				<li><a href="query_form.html">Query Form</a></li>
+				<li><a href="diagram.html">Diagram Svg</a></li>
+				<li><a href="thumbnail.html">Thumbnail images</a></li>
+				<li><a href="StudentDetails.html">Student Details</a></li>
+				<li><a href="Quiz.html">Quiz</a></li>
+			</ul>
+
+		</div>
+	</header>
+
+	<!--Quiz body-->
+	<div id='inner' class="inner">
+		<!--Rules for the quiz-->
+		<div id="rulesContainer">
+			<div id="rulesList">
+				<div class="title"><span>Multiple Choices Questionnaire</span></div>
+				<ul>
+					<li>
+						<div class="rules">You will have only 60 seconds to complete.</div>
+					</li>
+					<li>
+						<div class="rules">The quiz has 10 multiple choices questions.</div>
+					</li>
+					<li>
+						<div class="rules">You will get 2 points for each correct answer and -1 for each wrong answer.
+						</div>
+					</li>
+					<li>
+						<div class="rules">Your score will be displayed at the end of the quiz</div>
+					</li>
+					<li>
+						<div class="rules">Good Luck!</div>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<div id="startButton">
+					<button type="button" class="button" id="start" onclick="startButtonClicked()">Start</button>
+				</div>
+			</div>
+		</div>
+
+		<!--Quiz-->
+		<div id="quizContainer" class="quiz">
+			<header>
+				<div class="title">Multiple Choices Questionnaire</div>
+				<div id="timer" class="timer"></div><br>
+			</header>
+			<section>
+				<div>
+					<div id="question" class="question"></div>
+
+					<label for="aa" class="answers"><input type="radio" name="answer" id="aa" value="a">
+						<span id="ans1"></span></label>
+					<label for="ab" class="answers"><input type="radio" name="answer" id="ab" value="b">
+						<span id="ans2"></span></label>
+					<label for="ac" class="answers"><input type="radio" name="answer" id="ac" value="c">
+						<span id="ans3"></span></label>
+					<label for="ad" class="answers"><input type="radio" name="answer" id="ad" value="d">
+						<span id="ans4"></span></label>
+				</div>
+			</section>
+			<footer>
+				<button type="button" class="button" id="nextQ" onclick="nextQuestion()">Next Question</button>
+			</footer>
+		</div>
+	</div>
+
+	<!--summary-->
+	<div id="fixedResults" class="fixedResultsContainer">
+		<div id="timesUp" class="summary"></div>
+		<div id="timeSpent" class="summary"></div>
+		<div id="result" class="summary"></div>
+		<div id="score" class="summary"></div>
+		<div>
+			<button type="button" class="button performanceButton" onclick="summaryOfResults()">Performance</button>
+		</div>
+		<div id="navigationBarContainer" class="navigationBar performance">
+			<ul>
+				<li class="questionsNavigationBar"><a href="#0">Q 01 ||</a></li>
+				<li class="questionsNavigationBar"><a href="#1"> Q 02 ||</a></li>
+				<li class="questionsNavigationBar"><a href="#2"> Q 03 ||</a></li>
+				<li class="questionsNavigationBar"><a href="#3"> Q 04 ||</a></li>
+				<li class="questionsNavigationBar"><a href="#4"> Q 05 ||</a></li>
+				<li class="questionsNavigationBar"><a href="#5"> Q 06 ||</a></li>
+				<li class="questionsNavigationBar"><a href="#6"> Q 07 ||</a></li>
+				<li class="questionsNavigationBar"><a href="#7"> Q 08 ||</a></li>
+				<li class="questionsNavigationBar"><a href="#8"> Q 09 ||</a></li>
+				<li class="questionsNavigationBar"><a href="#9"> Q 10</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="div1" class="div1">
+		<div id="div2" class="div2">
+			<div id="div3" class="div3">
+				<div id="performanceContainer" class="performance performanceContainer">
+					<div id="resultSummary"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="fixedFooter">
+		<div class="footerContent">Update:23:03:2022</div>
+		<div class="footerContent">Page Editor:<a href="student3editor.html" class="pageEditor">
+				Sandil Munasinghe</a>
+		</div>
+	</footer>
+
+	<script src="./Java Script.js"></script>
+</body>
+
+</html>

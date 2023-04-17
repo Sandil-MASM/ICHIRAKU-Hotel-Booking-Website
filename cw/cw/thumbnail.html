@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<title>Thumbnails</title>
+<script src="https://kit.fontawesome.com/8a08717fcf.js" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="style-thumbnail.css">
+</head>
+<body>
+   <!-- navigation bar -->
+  <header>
+    <div class="header_container">
+    
+        <div class="logo">
+            <a href="main_page.html">
+                <img src="unnamed.png" alt="logo">
+            </a>
+        </div>
+        
+        <ul class="nav_list">
+            <li><a href="main_page.html">Home</a></li>
+			<li><a href="booking.html">Booking</a></li>
+			<li><a href="query_form.html">Query Form</a></li>
+			<li><a href="diagram.html">Diagram Svg</a></li>
+			<li><a href="thumbnail.html">Thumbnail images</a></li>
+			<li><a href="StudentDetails.html">Student Details</a></li>
+			<li><a href="Quiz.html">Quiz</a></li>
+        </ul>
+
+    </div>
+</header>
+
+    
+    <section>
+        <div class="bg"></div> 
+        <select  class="selectColor" onchange="changeColor(this)">
+            <option value="#e6e6fa">Lavender</option>
+            <option value="#c0c0c0">Silver</option>
+            <option value="#40e0d0">Turquoise</option>
+            <option value="#bcb88a">Sage</option>
+            <option value="#efdecd">Almond</option>
+        </select>
+    </section>
+    
+    <div class="container">
+        <div class="col">
+            <h2 id="l2">The vibrance city<br> Colombo.</h2>
+            <div class="caption">
+                <p1 id="l3">Situated in the western province of Sri Lanka Colombo is the main administrative and economic center of the island. The city was the capital for over two hundred years until the capital was shifted to nearby Sri Jayawardenepura. Its architecture has been influenced by Portuguese, Dutch, and British Colonial colonization.</p1>
+                <button type="button">know more</button>
+            </div>
+            <img src="Colombo.JPG">
+        </div>
+        <div class="col">
+            <h2 id="l4">The scenic city of<br> Kandy.</h2>
+            <div class="caption">
+                <p2 id="l5">This sacred site, popularly known as the city of Senkadagalapura, was the last capital of the Sinhala kings whose patronage enabled the Dinahala culture to flourish for more than 2,500 years until the occupation of Sri Lanka by the British in 1815. It is also the site of the Temple of the Tooth Relic, which is a famous pilgrimage site.</p2>
+                <button type="button">know more</button>
+            </div>
+            <img src="kandy.JPG">
+        </div>
+        <div class="col">
+            <h2 id="l6">The coastal city <br>Galle.</h2>
+            <div class="caption">
+                <p3 id="l7">Founded in 16th century by the Portuguese, Galle reached the height of its development in the 18th century, before the arrival of the British. It is the best example of a fortified city built by Europeans in South and South-East Asia, showing the interaction between European architectural styles and South Asiantraditions.</p3>
+                <button type="button">know more</button>
+            </div>
+            <img src="Galle.JPG">
+        </div>
+        <div class="col">
+            <h2 id="l8">The historic city <br>Sigiriya.</h2>
+            <div class="caption">
+                <p4 id="l9">The ruins of the capital built by the parricidal King Kassapa I (477–95) lie on the steep slopes and at the summit of a granite peak standing some 180m high . A series of galleries and staircases emerging from the mouth of a gigantic lion constructed of bricks and plaster provide access to the site.</p4>
+                <button type="button">know more</button>
+            </div>
+            <img src="Sigiriya.JPG">
+        </div>
+        <div class="col">
+            <h2 id="l10">The exquisite city <br>Yala.</h2>
+            <div class="caption">
+                <p5 id="l11">Nestled in the south-eastern corner of Sri Lanka, Yala National Park is the island’s principle national park and offers the greatest diversity of animal and birdlife in the country. The habitats found in the park are wide-ranging, from freshwater lakes to beaches, rocky outcrops to green plains and jungle.</p5>
+                <button type="button">know more</button>
+            </div>
+            <img src="Yala.JPG">
+        </div>
+        
+    </div>
+    
+    <button style="background-color: rgb(136, 243, 64); color: rgb(15, 15, 15);"  onclick="Lime()">Lime</button>
+    <button style="background-color: rgb(245, 177, 233); color: rgb(12, 11, 11);" onclick="Pink()">Pink</button>
+    <button style="background-color: rgb(109, 241, 241); color: rgb(12, 11, 11);" onclick="LightBlue()">Light Blue</button>
+    <button style="background-color: yellow; " onclick="Yellow()">Yellow</button>    
+   <script src="custom_thumbnail.js" ></script>  
+  
+<!-- footer design -->
+<footer>
+    <div class="footer_container">
+        <div class="footer_item">
+            <div class="info">
+                <h2>About us</h2><br>
+                <p>lorLorem ipsum dolor sit amet,<br> 
+                consectetur adipiscing elit.Vivamus<br>
+                quis vu lputate eros,iaculis consequat<br>
+                nisl.Nunc et suscipit urna. Integer<br> 
+                eleme ntum orci eu vehicula pretium.em</p>
+            </div>
+        </div>
+        
+        <div class="footer_item">
+            <h2>CONTACT INFO</h2>
+            <ul class="contact">
+                <a href="https://www.google.com/maps"><li class="contact_link"><i class="fa-solid fa-map-location-dot"></i>&nbsp;&nbsp;33/8, Sivapuri Road, Trincomalee<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sri Lanka</li></a>
+                <a href="https://www.google.com/gmail/about/"><li class="contact_link"><i class="fa-solid fa-envelope-open-text"></i>&nbsp;&nbsp;ichiraku@gmail.com</li></a>
+                <li class="contact_link"><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;026-2225341</li>
+                <a href="file:///C:/Users/Sujikanth/Desktop/cw%20web%20design/main_page.html"><li class="contact_link"><i class="fa-solid fa-globe"></i>&nbsp;&nbsp;ichiraku.lk</li></a>
+            </ul>	
+        </div>
+        
+        <div class="footer_item">
+            <h2>FOLLOW US</h2>
+            <br>
+            <div class="social_media">
+                <a class="sm_link" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                <a class="sm_link" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a class="sm_link" href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a class="sm_link" href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                <a class="sm_link" href="https://www.behance.net/"><i class="fa-brands fa-behance"></i></a>
+                
+            </div>
+        </div>
+        
+    </div>	
+</footer>         
+</body>
+</html>

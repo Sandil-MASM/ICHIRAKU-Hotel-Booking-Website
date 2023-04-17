@@ -1,0 +1,896 @@
+<!doctype html> 
+<html lang="en">
+<head> 
+
+	<meta charset="UTF-8">
+	<title>Booking</title> 
+	<link rel="stylesheet" href="book.css"> 
+		
+</head>  
+
+<body style="background-color:#999DA4;"> > 
+	<div id="editor"><h4><a href="student1editor.html">page developer</a></h4></div>
+		<header>
+			<div class="header_container">
+			
+				<div class="logo">
+					<a href="main_page.html">
+						<img src="logo.png" alt="logo">
+					</a>
+				</div>
+				
+				<ul class="nav_list">
+				 	<li><a href="main_page.html">Home</a></li>
+					<li><a href="booking.html">Booking</a></li>
+					<li><a href="query_form.html">Query Form</a></li>
+					<li><a href="diagram.html">Diagram Svg</a></li>
+					<li><a href="thumbnail.html">Thumbnail images</a></li>
+					<li><a href="detail.html">Student Details</a></li>
+					<li><a href="quiz.html">Quiz</a></li>
+				</ul>
+		
+			</div>
+		</header>
+		
+	<div class="imgchn">
+				<h1 class="l1"> Welcome to ICHIRAKU TOURS!!! </h1> 
+				<p class = "introl1">We are a well-established tourism company located in Srilanka and we have partnered with 3 top rated corporate sectors in srilanka providing the best service all in one package. Our partners are Mihin Travels providing safari services, Shangri-La Colombo providing authentic hotels, rooms and suites and finally Ravana adventures providing best adventure sporting in srilanka. We are wishing you a happy travel and enjoy your stay at srilanka.  </p>
+		
+				<div class="slid"> 
+				
+			  
+					<div id="slider">
+				
+	
+						<figure>
+							<img src="5.jpg" alt="room"  >
+							<img src="6.jpg" alt="room" >
+							<img src="8.jpg" alt="room" >
+							<img src="9.jpg" alt="room" >
+						</figure> 
+					
+					</div>
+				</div>
+				<br>
+				
+				<br>
+				<br>
+				<br> 
+			</div> 
+			<hr>
+			
+	
+          <!--booking-->
+	<h1 class = "intro" > Book your desired rooms from our partner "shangrila Colombo"</h1>  
+	<div class="intro-container">
+		<p><b>"""Shangri-La, Colombo presents a new level of luxury in the city. Located in the heart of the business and entertainment district, the hotel offers the various collection of guestrooms with stunning views of the Indian Ocean, Beira Lake or cityscape. The property has 4 innovative restaurants and bars, and it is Colombo’s largest and stylish event spaces.Set to be the city’s dining destination, Shangri-La Colombo’s restaurants and bars include Capital Bar & Grill, presenting tasty steaks and seafood grills with a wide selection of whisky. Shangri-La’s signature Chinese restaurant Shang Palace celebrates cuisine steeped in rich tradition and Central, the hotel's vibrant all-day dining restaurant and café which is the newest addition to Colombo’s dining scene. Sapphyr Lounge is a place to meet with friends and family over simple indulgences. There is a Pool Bar overlooking the Indian Ocean and it is perfect for light refreshments. The hotel also offers direct access to the most extensive international shopping mall in Sri Lanka, Shangri-La’s own One Galle Face Mall."""</b></p>
+		<br>
+		<table>
+			<tr>
+				<th></th>
+				<th>Deluxe Double Room"with terrace"</th>
+				<th> Deluxe Twin Room"with terrace"</th>
+				<th>Deluxe Double Room"without terrace"</th>
+			</tr>
+			<tr>
+				<th> LKR per Night </th>
+				<td> 5000 </td> 
+				<td> 6000 </td>
+				<td> 3000 </td>
+			</tr>
+			<tr>
+				<th> wifi </th>
+				<td> yes </td>
+				<td> yes </td>
+				<td> yes </td>
+			</tr> 
+			<tr>
+				<th> Parking </th>
+				<td> yes </td>
+				<td> yes </td>
+				<td> yes </td>
+			</tr> 
+			<tr>
+				<th> Air conditioned</th>
+				<td> yes </td>
+				<td> yes </td>
+				<td> yes </td>
+			</tr> 
+			<tr>
+				<th> Number of nights</th>
+				<td> <input type="number" value="0" id= "nm1" min="1" max="10"> </td>
+				<td> <input type="number" value="0" id= "nm2" min="1" max="10"> </td>
+				<td> <input type="number" value="0" id= "nm3" min="1" max="10"> </td>
+			</tr>
+			<tr>
+				<th> Images</th>
+				<td> <span> <img src="edit3.jpg" alt="room" height=70 width=150  onclick="myfunction(this)" > </span> </td>
+				<td> <span><img src="edit1.jpg" alt="room" height=70 width=150 onclick="myfunction(this)"> </span></td>
+				<td> <span><img src="edit2.jpg" alt="room" height=70 width=150 onclick="myfunction(this)"> </span></td>
+			</tr> 
+			
+			<tr>
+				<th> Add to cart</th>
+				<td> <button name="button" onclick="cal1()" class="btn1" > Add to cart</button> </td>
+				<td> <button name="button" onclick="cal2()"> Add to cart</button> </td>
+				<td> <button name="button" onclick="cal3()"> Add to cart</button> </td>
+			</tr>
+		</table>
+	</div> 
+	
+	
+	
+	
+	<div class="product"> 
+		<div class="product-small-img">
+			<img src="edit1.jpg" onclick="myfunction(this)" alt="room" >
+			<img src="edit2.jpg" onclick="myfunction(this)" alt="room" >
+			<img src="edit3.jpg" onclick="myfunction(this)" alt="room" >
+			<img src="edit4.jpg" onclick="myfunction(this)" alt="room" > 
+		</div>
+		<div class="img-container">
+			<img id="image" src="edit1.jpg" alt="room" width=500 >
+				
+		</div>
+	</div>
+	
+	
+	<div class= "proceed">
+		<button name="pro" onclick="pro()"> Click here to check total of "booking" </button>
+		
+		
+	</div>
+
+	<div class="hugo">
+	
+		<span id="totpro1">Total: </span> 
+		<span id="totpro"> </span> 
+		
+	</div> 
+	
+	<div class="cartscrl">  
+		<span>"click cart to check out"</span>
+		<img src="cart.jpg" onclick="cartby()" alt="cart" >
+	
+	
+	</div>
+	
+	<script>
+		function cartby() 
+		{
+			window.scrollBy(0, 2300);
+		}
+		
+	
+	</script>
+	
+
+	
+	
+	
+
+	<script>
+		
+		function myfunction(smallimg)
+		{
+			var fullimg= document.getElementById("image");
+			fullimg.src = smallimg.src;
+		} 
+	
+	</script> 
+	<script>
+		var count = 0;
+		var total=0;
+		function cal1()
+		{
+			
+			if (count == 0 ) {
+				var fu = document.getElementById("nm1").value;
+				var tot = ( fu *5000);
+				total=tot
+				console.log(total);
+				alert("item added to cart for total") 
+				count=(count + 1);
+			}   else{
+					alert(" you have already added item")
+				}  
+			var jim1= ((parseInt(total))+(parseInt(total1))+(parseInt(total2))+((parseInt(ttotal))+(parseInt(ttotal1))+(parseInt(ttotal2)))+((parseInt(qtotal))+(parseInt(qtotal1))+(parseInt(qtotal2))));
+			document.getElementById("totpro").innerHTML=jim1; 
+				
+			
+		
+		}
+	</script>
+	<script>
+		var count1 = 0;
+		var total1=0;
+		function cal2()
+		{ 
+			
+			if (count1 == 0 ) {
+				var fu1 = document.getElementById("nm2").value;
+				var tot1 = ( fu1 *6000);
+				total1=tot1;
+				console.log(total1);
+				alert("item added to cart for total") 
+				count1=(count1 + 1);
+			}   else{
+					alert(" you have already added item") 
+				} 
+			var jim2= ((parseInt(total))+(parseInt(total1))+(parseInt(total2))+((parseInt(ttotal))+(parseInt(ttotal1))+(parseInt(ttotal2)))+((parseInt(qtotal))+(parseInt(qtotal1))+(parseInt(qtotal2))));
+			document.getElementById("totpro").innerHTML=jim2; 
+			
+		
+		}
+	</script> 
+	<script>
+		var count2 = 0;
+		var total2=0;
+		function cal3()
+		{
+			
+			if (count2 == 0 ) {
+				var fu2 = document.getElementById("nm3").value;
+				var tot2 = ( fu2 *3000);
+				total2=tot2;
+				console.log(total2);
+				alert("item added to cart for total") 
+				count2=(count2 + 1);
+			}   else{
+					alert(" you have already added item");
+					
+					
+				} 
+			var jim3= ((parseInt(total))+(parseInt(total1))+(parseInt(total2))+((parseInt(ttotal))+(parseInt(ttotal1))+(parseInt(ttotal2)))+((parseInt(qtotal))+(parseInt(qtotal1))+(parseInt(qtotal2))));
+			document.getElementById("totpro").innerHTML=jim3; 
+				
+			
+		
+		}
+	</script>
+	<script>
+		function pro()
+		{
+	
+			var tt= ((parseInt(total))+(parseInt(total1))+(parseInt(total2)));
+			alert(tt);
+			
+		}
+	</script>  
+	
+
+	
+	
+	
+	
+	<!-- zip linehtml-->
+	<hr>
+	<h1 class = "kintro" > Book your Adventure Sporting with our partner "Ravana adventures"</h1>  
+	<div class="kintro-container">
+		<p><b>"""Today, zip lining is primarily an adventure thrill ride, but it wasn’t always that way.  Originally created out of necessity, zip lining was invented as a method of fast transportation across canyons, rivers and other impassable areas. To create a zipline, cables and pulleys are threaded between two points at a slight angle; gravity then provides the momentum to pull the rider from one point to the next.Flying Ravana is Sri Lanka’s first ever mega dual zip-line, located amidst the luscious green estates of Ella,Sri Lanka. (near Little Adams Peak - Ella's main attraction) The two-wire zip-line stretches for more than half a kilometre, slides at max 80kmph and offers a bird’s-eye view of the beautiful hills of the island. Flying Ravana is truly, Ella in all its glory. """</b></p>
+		<br>
+		<table>
+			<tr>
+				<th></th>
+				<th>Zipline in jaffna</th>
+				<th> Zipline in ELA</th>
+				<th>Zipline in Galle</th>
+			</tr>
+			<tr>
+				<th> LKR per Safari </th>
+				<td> 5000 </td> 
+				<td> 8000 </td>
+				<td> 10000 </td>
+			</tr>
+			
+			<tr>
+				<th> Hours for Zipline</th>
+				<td> <input type="number" value="0" id= "knm1" min="1" max="10"> </td>
+				<td> <input type="number" value="0" id= "knm2" min="1" max="10"> </td>
+				<td> <input type="number" value="0" id= "knm3" min="1" max="10"> </td>
+			</tr>
+			<tr>
+				<th> Images</th>
+				<td> <span> <img src="zip1.jpg" height=70 width=150  onclick="lelu(this)" alt="zipline" > </span> </td>
+				<td> <span><img src="zip2.jpg" height=70 width=150 onclick="lelu(this)" alt="zipline" > </span></td>
+				<td> <span><img src="zip3.jpg" height=70 width=150 onclick="lelu(this)" alt="zipline" > </span></td>
+			</tr> 
+			<tr>
+				<th> Add to cart</th>
+				<td> <button name="button2" onclick="cal7()" class="btn1" > Add to cart</button> </td>
+				<td> <button name="button2" onclick="cal8()"> Add to cart</button> </td>
+				<td> <button name="button2" onclick="cal9()"> Add to cart</button> </td>
+			</tr>
+		</table>
+	</div> 
+	
+	
+	
+	
+	<div class="kproduct"> 
+		<div class="kproduct-small-img">
+			<img src="zip1.jpg" onclick="lelu(this)" alt="zipline" >
+			<img src="zip2.jpg" onclick="lelu(this)" alt="zipline">
+			<img src="zip3.jpg" onclick="lelu(this)" alt="zipline">
+			<img src="zip4.jpg" onclick="lelu(this)" alt="zipline"> 
+		</div>
+		<div class="kimg-container">
+			<img id="timage" src="zip1.jpg" alt="zipline" width=500>
+				
+		</div>
+	</div>
+	
+	
+	<div class= "kproceed">
+		<button name="tpro" onclick="tpro()"> Click here to check total of "zipline" </button>
+	</div> 
+
+	<div class="hugo1">
+	
+		<span id="1totpro1">Total: </span> 
+		<span id="1totpro"> </span> 
+		
+	</div>
+
+	<div class="cartscrl1">  
+		<span>"click cart to check out"</span>
+		<img src="cart.jpg" onclick="cartby1()" alt="cart" >
+	    <!---window.scrollBy(0, 400);-->
+	
+	</div>
+	
+	<script>
+		function cartby1() 
+		{
+			window.scrollBy(0, 1500);
+		}
+		
+	
+	</script>
+	
+
+	
+	
+	
+
+	<script>
+		
+		function lelu(smallimg2)
+		{
+			var fullimg2= document.getElementById("timage");
+			fullimg2.src = smallimg2.src;
+		} 
+	
+	</script> 
+	<script>
+		var tcount = 0;
+		var ttotal=0;
+		function cal7()
+		{
+			
+			if (tcount == 0 ) {
+				var tfu = document.getElementById("knm1").value;
+				var ttot = ( tfu *5000);
+				ttotal=ttot
+				console.log(ttotal);
+				alert("item added to cart for total") 
+				tcount=(tcount + 1);
+			}   else{
+					alert(" you have already added item")
+				}
+				
+			var jim4= ((parseInt(total))+(parseInt(total1))+(parseInt(total2))+((parseInt(ttotal))+(parseInt(ttotal1))+(parseInt(ttotal2)))+((parseInt(qtotal))+(parseInt(qtotal1))+(parseInt(qtotal2))));
+			document.getElementById("1totpro").innerHTML=jim4;
+		
+		}
+	</script>
+	<script>
+		var tcount1 = 0;
+		var ttotal1=0;
+		function cal8()
+		{ 
+			
+			if (tcount1 == 0 ) {
+				var tfu1 = document.getElementById("knm2").value;
+				var ttot1 = ( tfu1 *8000);
+				ttotal1=ttot1;
+				console.log(ttotal1);
+				alert("item added to cart for total") 
+				tcount1=(tcount1 + 1);
+			}   else{
+					alert(" you have already added item") 
+				} 
+				
+			var jim5= ((parseInt(total))+(parseInt(total1))+(parseInt(total2))+((parseInt(ttotal))+(parseInt(ttotal1))+(parseInt(ttotal2)))+((parseInt(qtotal))+(parseInt(qtotal1))+(parseInt(qtotal2))));
+			document.getElementById("1totpro").innerHTML=jim5;
+		
+		}
+	</script> 
+	<script>
+		var tcount2 = 0;
+		var ttotal2=0;
+		function cal9()
+		{
+			
+			if (tcount2 == 0 ) {
+				var tfu2 = document.getElementById("knm3").value;
+				var ttot2 = ( tfu2 *10000);
+				ttotal2=ttot2;
+				console.log(ttotal2);
+				alert("item added to cart for total") 
+				tcount2=(tcount2 + 1);
+			}   else{
+					alert(" you have already added item");
+					
+					
+				}
+				
+			var jim6= ((parseInt(total))+(parseInt(total1))+(parseInt(total2))+((parseInt(ttotal))+(parseInt(ttotal1))+(parseInt(ttotal2)))+((parseInt(qtotal))+(parseInt(qtotal1))+(parseInt(qtotal2))));
+			document.getElementById("1totpro").innerHTML=jim6;
+		
+		}
+	</script>
+	<script>
+		function tpro()
+		{
+	
+			var ttt= ((parseInt(ttotal))+(parseInt(ttotal1))+(parseInt(ttotal2)));
+			alert(ttt);
+			
+		}
+	</script> 	
+ 
+	<hr>
+	<!--safari html-->
+	
+	<h1 class = "mintro" > Book your Safari with our partner "Mihin Lanka"</h1>  
+	<div class="mintro-container">
+		<p><b>"""Shangri-La, Colombo presents a new level of luxury in the city. Located in the heart of the business and entertainment district, the hotel offers the various collection of guestrooms with stunning views of the Indian Ocean, Beira Lake or cityscape. The property has 4 innovative restaurants and bars, and it is Colombo’s largest and stylish event spaces.Set to be the city’s dining destination, Shangri-La Colombo’s restaurants and bars include Capital Bar & Grill, presenting tasty steaks and seafood grills with a wide selection of whisky. Shangri-La’s signature Chinese restaurant Shang Palace celebrates cuisine steeped in rich tradition and Central, the hotel's vibrant all-day dining restaurant and café which is the newest addition to Colombo’s dining scene. Sapphyr Lounge is a place to meet with friends and family over simple indulgences. There is a Pool Bar overlooking the Indian Ocean and it is perfect for light refreshments. The hotel also offers direct access to the most extensive international shopping mall in Sri Lanka, Shangri-La’s own One Galle Face Mall."""</b></p>
+		<br>
+		<table>
+			<tr>
+				<th></th>
+				<th>Safari in Yala</th>
+				<th> Safari in ELA</th>
+				<th>Safari in Galle</th>
+			</tr>
+			<tr>
+				<th> LKR per Safari </th>
+				<td> 10000 </td> 
+				<td> 15000 </td>
+				<td> 20000 </td>
+			</tr>
+			
+			<tr>  
+				<th> Days for safari</th>
+				<td> <input type="number" value="0" id= "znm1" min="1" max="10"> </td>
+				<td> <input type="number" value="0" id= "znm2" min="1" max="10"> </td>
+				<td> <input type="number" value="0" id= "znm3" min="1" max="10"> </td>
+			</tr>
+			<tr>
+				<th> Images</th>
+				<td> <span> <img src="saf1.jpg" height=70 width=150  onclick="hero(this)" alt="safari"> </span> </td>
+				<td> <span><img src="saf2.jpg" height=70 width=150 onclick="hero(this)" alt="safari"> </span></td>
+				<td> <span><img src="saf3.jpg" height=70 width=150 onclick="hero(this)" alt="safari"> </span></td>
+			</tr> 
+			<tr>
+				<th> Add to cart</th>
+				<td> <button name="button1" onclick="cal4()"  > Add to cart</button> </td>
+				<td> <button name="button1" onclick="cal5()"> Add to cart</button> </td>
+				<td> <button name="button1" onclick="cal6()"> Add to cart</button> </td>
+			</tr>
+		</table>
+	</div> 
+	
+	
+	
+	
+	<div class="mproduct"> 
+		<div class="mproduct-small-img">
+			<img src="saf1.jpg" onclick="hero(this)" alt="safari">
+			<img src="saf2.jpg" onclick="hero(this)" alt="safari">
+			<img src="saf3.jpg" onclick="hero(this)" alt="safari">
+			<img src="saf4.jpg" onclick="hero(this)" alt="safari"> 
+		</div>
+		<div class="mimg-container">
+			<img id="qimage" src="saf4.jpg" alt="safari" width=500>
+				
+		</div>
+	</div>
+	
+	
+	<div class= "mproceed">
+		<button name="qpro" onclick="qpro()"> Click here to check total of "safari" </button>
+	</div>  
+
+	<div class="hugo2">
+	
+		<span id="2totpro1">Total: </span> 
+		<span id="2totpro"> </span> 
+		
+	</div>
+
+	<div class="cartscrl2">  
+		<span>"click cart to check out"</span>
+		<img src="cart.jpg" onclick="cartby2()" alt="cart" >
+	    <!---window.scrollBy(0, 400);-->
+	
+	</div>
+	
+	<script>
+		function cartby2() 
+		{
+			window.scrollBy(0, 400);
+		}
+		
+	
+	</script>
+
+	
+	
+	
+
+	<script>
+		
+		function hero(smallimg2)
+		{
+			var fullimg2= document.getElementById("qimage");
+			fullimg2.src = smallimg2.src;
+		} 
+	
+	</script> 
+	<script>
+		var qcount = 0;
+		var qtotal=0;
+		function cal4()
+		{
+			
+			if (qcount == 0 ) {
+				var qfu = document.getElementById("znm1").value;
+				var qtot = ( qfu *10000);
+				qtotal=qtot;
+				console.log(qtotal);
+				alert("item added to cart for total") 
+				qcount=(qcount + 1);
+			}else{
+				alert(" you have already added item")
+			}
+				
+			var jim7=  ((parseInt(total))+(parseInt(total1))+(parseInt(total2))+((parseInt(ttotal))+(parseInt(ttotal1))+(parseInt(ttotal2)))+((parseInt(qtotal))+(parseInt(qtotal1))+(parseInt(qtotal2))));
+			document.getElementById("2totpro").innerHTML=jim7;
+		
+		}
+	</script>
+	<script>
+		var qcount1 = 0;
+		var qtotal1=0;
+		function cal5()
+		{ 
+			
+			if (qcount1 == 0 ) {
+				
+				var qfu1 = document.getElementById("znm2").value;
+				var qtot1 = ( qfu1 *15000);
+				qtotal1=qtot1;
+				console.log(qtotal1);
+				alert("item added to cart")
+				qcount1=(qcount1+1);
+			}else{
+				
+				alert(" you have already added item") 
+			} 
+				
+			var jim8= ((parseInt(total))+(parseInt(total1))+(parseInt(total2))+((parseInt(ttotal))+(parseInt(ttotal1))+(parseInt(ttotal2)))+((parseInt(qtotal))+(parseInt(qtotal1))+(parseInt(qtotal2))));
+			document.getElementById("2totpro").innerHTML=jim8;
+		
+		}
+	</script> 
+	<script>
+		var qcount2 = 0;
+		var qtotal2=0;
+		function cal6()
+		{
+			
+			if (qcount2 == 0 ) {
+				var qfu2 = document.getElementById("znm3").value;
+				var qtot2 = ( qfu2 *20000);
+				qtotal2=qtot2;
+				console.log(qtotal2);
+				alert("item added to cart for total") 
+				qcount2=(qcount2 + 1);
+			}else{
+				alert(" you have already added item");
+					
+					
+			}
+				
+			var jim9= ((parseInt(total))+(parseInt(total1))+(parseInt(total2))+((parseInt(ttotal))+(parseInt(ttotal1))+(parseInt(ttotal2)))+((parseInt(qtotal))+(parseInt(qtotal1))+(parseInt(qtotal2))));
+			document.getElementById("2totpro").innerHTML=jim9;
+		
+		}
+	</script>
+	<script>
+		function qpro()
+		{
+	
+			var qtt= ((parseInt(qtotal))+(parseInt(qtotal1))+(parseInt(qtotal2)));
+			alert(qtt);
+			
+		}
+	</script> 
+	
+	<hr>
+	
+	<h1 id="fsec"> CHECK OUT </H1> 
+	<p id="fpara"> <b>Please Enter Correct name and email and press pay now to view your bill</b></p>
+	
+	        <!-- Form code-->
+			
+	<form onsubmit="submitForm(event)">
+		<b><label for="name">Name: </label>  </b>
+		<input type="text" name="name" id="name">
+		<br>
+		<b><label for="name">email: </label></b>
+		<input type="email" name="email" id="email"> 
+		<button type="submit" onclick=cat(ho)>Pay Now</button> 
+		
+		<br> 
+		<br> 
+		
+	</form> 
+	<div class="bill" id="vo"> 
+		<p>------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+		<span>NAME:</span>
+		<span id="nameval"> </span> 
+		<br>
+		<span>Email:</span> 
+		<span id="emailval"> </span>  
+		<br> 
+		
+		<div class="billbook"> 
+			<br>
+			<span >product:</span>
+			<span id="prd1">Deluxe Double Room"with terrace" </span>  
+			<br>
+			<span >Quantity:</span>
+			<span id="prd2"> </span> 
+			<br>
+			<span >total:</span>
+			<span id="prd3"> </span>  
+			<br>
+		
+			 
+			
+			 
+			<br>
+			<span >product:</span>
+			<span id="2prd1">Deluxe twin Room"with terrace" </span>  
+			<br>
+			<span >Quantity:</span>
+			<span id="2prd2"> </span> 
+			<br>
+			<span >total:</span>
+			<span id="2prd3"> </span> 
+			<br>
+			
+			<br>
+			<span >product:</span>
+			<span id="3prd1">Deluxe Double Room"without terrace" </span>  
+			<br>
+			<span >Quantity:</span>
+			<span id="3prd2"> </span> 
+			<br>
+			<span >total:</span>
+			<span id="3prd3"> </span> 
+			
+			
+			<div class="safdet">                     <!--- start here-->
+				<span >product:</span>
+				<span id="4prd1">Zipline in jaffna </span>  
+				<br>
+				<span >Hours of zipline:</span>
+				<span id="4prd2"> </span> 
+				<br>
+				<span >total:</span>
+				<span id="4prd3"> </span>  
+				<br> 
+				<br>
+				<span >product:</span>
+				<span id="5prd1">Zipline in Ela </span>  
+				<br>
+				<span >Hours of zipline:</span>
+				<span id="5prd2"> </span> 
+				<br>
+				<span >total:</span>
+				<span id="5prd3"> </span> 
+				<br>
+				<br>
+				<span >product:</span>
+				<span id="6prd1">Zipline in Galle </span>  
+				<br>
+				<span >Hours of zipline:</span>
+				<span id="6prd2"> </span> 
+				<br>
+				<span >total:</span>
+				<span id="6prd3"> </span>  
+				
+				
+			
+			</div>
+			
+			<div class="safdet1"> 
+			
+				<span >product:</span>
+				<span id="7prd1">Safari in Yala</span>  
+				<br>
+				<span >Days of Safari:</span>
+				<span id="7prd2"> </span> 
+				<br>
+				<span >total:</span>
+				<span id="7prd3"> </span>  
+				<br> 
+				<br>
+				<span >product:</span>
+				<span id="8prd1">Safari in Ela </span>  
+				<br>
+				<span >Days of Safari:</span>
+				<span id="8prd2"> </span> 
+				<br>
+				<span >total:</span>
+				<span id="8prd3"> </span> 
+				<br>
+				<br>
+				<span >product:</span>
+				<span id="9prd1">Safari in Galle </span>  
+				<br>
+				<span >Days of Safari:</span>
+				<span id="9prd2"> </span> 
+				<br>
+				<span >total:</span>
+				<span id="9prd3"> </span>  
+				
+			
+			</div>
+			
+			
+<div class="lasttot">
+<span>Final Total:</span>
+<span id="val"> </span>   
+</div>
+<br> 
+
+
+	
+<p id="lastpara"> Thank you for choosing us! please visit again.</p>  
+<p id="lastdot">------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+<hr> 
+			
+			
+			
+			
+			
+		</div>
+		
+		
+	</div>
+	
+	
+	<script> 
+		
+		function submitForm(event) 
+		{ 	
+			let fval= ((parseInt(total))+(parseInt(total1))+(parseInt(total2))+((parseInt(ttotal))+(parseInt(ttotal1))+(parseInt(ttotal2)))+((parseInt(qtotal))+(parseInt(qtotal1))+(parseInt(qtotal2))));
+			if(document.getElementById("name").value =="") {  
+				alert("Please enter your name") 
+				event.preventDefault(); 
+			}	else if(document.getElementById("email").value==""){
+					alert("Please enter your email") 
+					event.preventDefault(); 
+			}		else if(fval>=1){      <!--if(tpcount==0){ -->
+			
+						event.preventDefault();
+			
+		
+						let firstvalue = document.getElementById("name").value;
+						document.getElementById("nameval").innerHTML=firstvalue;  
+			
+						let secondval = document.getElementById("email").value;
+						document.getElementById("emailval").innerHTML=secondval; 
+
+						let quantity1 = document.getElementById("nm1").value;
+						document.getElementById("prd2").innerHTML=quantity1;  
+			
+			
+						document.getElementById("prd3").innerHTML=total;   
+						
+						let quantity2 = document.getElementById("nm2").value;
+						document.getElementById("2prd2").innerHTML=quantity2;  
+			
+			
+						document.getElementById("2prd3").innerHTML=total1;  
+						
+						let quantity3 = document.getElementById("nm3").value;
+						document.getElementById("3prd2").innerHTML=quantity3;  
+			
+			
+						document.getElementById("3prd3").innerHTML=total2;  
+			
+			
+						
+						document.getElementById("val").innerHTML=fval; 
+			
+						document.getElementById("vo").style.display = "block";	
+						window.scrollBy(0, 400);
+				
+					<!-- have else if for indicidual count-->	 
+					
+					    <!-- 2nd column -->  
+
+						let kquantity1 = document.getElementById("knm1").value;
+						document.getElementById("4prd2").innerHTML=kquantity1;  
+		
+			
+						document.getElementById("4prd3").innerHTML=ttotal;   
+						
+						let kquantity2 = document.getElementById("knm2").value;
+						document.getElementById("5prd2").innerHTML=kquantity2;  
+			
+			
+						document.getElementById("5prd3").innerHTML=ttotal1;  
+						
+						let kquantity3 = document.getElementById("knm3").value;
+						document.getElementById("6prd2").innerHTML=kquantity3;  
+			
+			
+						document.getElementById("6prd3").innerHTML=ttotal2;   
+						
+						<!-- 3rd column--> 
+						
+						let zquantity1 = document.getElementById("znm1").value;
+						document.getElementById("7prd2").innerHTML=zquantity1;  
+		
+			
+						document.getElementById("7prd3").innerHTML=qtotal;   
+						
+						let zquantity2 = document.getElementById("znm2").value;
+						document.getElementById("8prd2").innerHTML=zquantity2;  
+			
+			
+						document.getElementById("8prd3").innerHTML=qtotal1;  
+						
+						let zquantity3 = document.getElementById("znm3").value;
+						document.getElementById("9prd2").innerHTML=zquantity3;  
+			
+			
+						document.getElementById("9prd3").innerHTML=qtotal2; 
+						
+						
+	
+					}else {
+						alert("Cart Empty or error occured!!Page will refresh!!!") 
+					} 
+						
+						
+
+		}
+			
+			
+		
+	
+	
+	</script>
+	
+		
+
+
+
+	
+	
+
+	
+	
+	
+</body>
+</html>
+	
+	

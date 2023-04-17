@@ -1,0 +1,11 @@
+void - no return anything
+
+#081234
+
+#2ED9C3
+
+gmail - ichiraku77N@gmail.com
+
+passowrd -naruto77N
+
+action="https://script.google.com/macros/s/AKfycbwB8XLUyVGAG3KYMG6VhC6unjV0B2fYOkB65EgCnGrufz6qMuNyarXj_joaI8QBcmZWiA/exec"

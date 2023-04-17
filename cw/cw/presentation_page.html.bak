@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en"> 
+	<head> 
+		<meta http-equiv="refresh" content="4; url=booking.html" />
+		<meta charset="UTF-8">
+		<title>Presentation Page</title> 
+		<style>
+			body {
+				background: linear-gradient(
+					135deg,
+					#2e4053,
+					#566573  		
+				);
+				font-family: "poppins",sans-serif;
+				height: 98vh;
+				text-align: center;
+			}
+			
+			p, h1, h2, h3, h4, h5 {
+				color: white;
+			}
+		</style>
+
+	</head>  
+		<body>  
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<h1>ICHIRAKU Booking Website</h1>
+			<h2>Group K3</h2>
+			
+			<h4>Group Members</h4>
+
+			<p>
+				Gunaretnam Sujikanth<br>
+				Achinta Manodaya Rodrigo<br>
+				Sai charan Gnanapiragasam<br>
+				Sandil Muansinghe<br>
+			</p>
+
+
+		
+        
+		</body> 
+	
+</html>

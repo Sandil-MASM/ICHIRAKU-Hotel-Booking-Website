@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+		<title>query page</title>
+		<link rel="stylesheet" href="query_form_style.css">
+		<script src="https://kit.fontawesome.com/8a08717fcf.js" crossorigin="anonymous"></script>
+		
+		
+		<!-- javascript -->
+		<script>
+			<!-- validation -->	
+			function formValidation() {
+				
+				let nameValue = document.getElementById("name").value;
+				document.getElementById("summary_name").innerHTML = nameValue;
+				
+				let emailValue = document.getElementById("email").value;
+				document.getElementById("summary_email").innerHTML = emailValue;
+				
+				let telValue = document.getElementById("tel").value;
+				document.getElementById("summary_cn").innerHTML = telValue;
+				
+				let detailValue = document.getElementById("issue").value;
+				document.getElementById("summary_issue").innerHTML = detailValue;
+				
+				if (nameValue === "") {
+					alert("Name must be filled out");
+					return false;
+				} else if (emailValue === ""){
+					alert("Email must be filled out");
+					return false;
+				} else if (telValue === ""){
+					alert("Contact number must be filled out");
+					return false;
+				} else if (detailValue === ""){
+					alert("Query details must be filled out");
+					return false;
+				} else {
+					document.getElementById("form_container").style.display = "none";
+					document.getElementById("summary_container").style.display = "block";
+				}
+				
+				let subjectValue = document.getElementById("subject").value;
+				document.getElementById("summary_subject").innerHTML = subjectValue;
+	
+				let add1Value = document.getElementById("street_add1").value;
+				document.getElementById("summary_add1").innerHTML = add1Value;
+				
+				let add2Value = document.getElementById("street_add2").value;
+				document.getElementById("summary_add2").innerHTML = add2Value;
+				
+				let cityValue = document.getElementById("city").value;
+				document.getElementById("summary_city").innerHTML = cityValue;
+				
+				let stateValue = document.getElementById("state").value;
+				document.getElementById("summary_state").innerHTML = stateValue;
+				
+				let zipValue = document.getElementById("zip").value;
+				document.getElementById("summary_zip").innerHTML = zipValue;
+				
+				let adultValue = document.getElementById("noAdult").value;
+				document.getElementById("summary_noAdult").innerHTML = adultValue;
+				
+				let child1Value = document.getElementById("noChild1").value;
+				document.getElementById("summary_noChild1").innerHTML = child1Value;
+				
+				let child2Value = document.getElementById("noChild2").value;
+				document.getElementById("summary_noChild2").innerHTML = child2Value;
+				
+				let arrDateValue = document.getElementById("arrDate").value;
+				document.getElementById("summary_arrDate").innerHTML = arrDateValue;
+				
+				let depDateValue = document.getElementById("depDate").value;
+				document.getElementById("summary_depDate").innerHTML = depDateValue;
+						
+			}
+			
+			function editForm() {
+				document.getElementById("summary_container").style.display = "none";
+				document.getElementById("form_container").style.display = "block";
+			}
+			
+			function reloadPage() {
+				reload = location.reload();
+			}
+		
+		</script>
+		
+	</head>
+	<body>
+	
+		<!-- navigation bar -->
+		<header>
+			<div class="header_container">
+			
+				<div class="logo">
+					<a href="main_page.html">
+						<img src="logo.png" alt="logo">
+					</a>
+				</div>
+				
+				<ul class="nav_list">
+				 	<li><a href="main_page.html">Home</a></li>
+					<li><a href="booking.html">Booking</a></li>
+					<li><a href="query_form.html">Query Form</a></li>
+					<li><a href="diagram.html">Diagram Svg</a></li>
+					<li><a href="thumbnail.html">Thumbnail images</a></li>
+					<li><a href="StudentDetails.html">Student Details</a></li>
+					<li><a href="Quiz.html">Quiz</a></li>
+				</ul>
+		
+			</div>
+		</header>
+		
+		<!-- _____________________contact details_____________________ -->
+		<div class="contact_box">
+			<ul class="contact">
+				<li>
+					<h2>CONTACT INFO</h2>
+				</li>
+				<li>
+					<span><i class="fa-solid fa-map-location-dot"></i></span>
+					<span>33/8, Sivapuri Road,<br>
+					Trincomalee,<br>
+					Sri Lanka</span>
+				</li>
+				<li>
+					<span><i class="fa-solid fa-envelope-open-text"></i></span>
+					<span>ichiraku@gmail.com</span>
+				</li>
+				<li>
+					<span><i class="fa-solid fa-phone"></i></span>
+					<span>026-2225341</span>
+				</li>
+			</ul>	
+		</div>
+		
+		<!-- _____________________query form_____________________ -->
+		<div id="form_container">
+			<h1>Query Form</h1>
+			<p>Have any suggestion or question? Drop us a message.</p>
+			<form name="myForm" id="myForm" action="mailto:gunaretnam.20210637@iit.ac.lk" method="POST">
+			
+				<div class="row">
+					<div>
+						<label for="name">Name</label>
+						<input type="text" name="Name" id="name" placeholder="Your name here" autocomplete="off">
+					</div>
+					
+					<div>
+						<label for="email">Email</label>
+						<input type="email" name="Email" id="email" placeholder="Your Email address here" autocomplete="off">
+					</div>
+				</div>
+				
+				<div class="row">
+					<div>
+						<label for="subject">Subject</label>
+						<select name="Subject" id="subject" autocomplete="off">
+							<option value="Booking">Booking</option>
+							<option value="Payment">Payment</option>
+							<option value="Hotel reviews" selected>Hotel reviews</option>
+							<option value="Other services">Other services</option>
+						</select>
+					</div>
+				
+					<div>
+						<label for="tel">Contact Number</label>
+						<input type="tel" name="Contact Number" id="tel" placeholder="Your phone number here" autocomplete="off">
+					</div>
+				</div>
+				
+				<br>
+				<div>
+					<h4>Address</h4>
+				</div>
+				
+				<div class="row">
+					<div>
+						<label for="street_add1">Street address 1</label>
+						<input type="text" name="Street address 1" id="street_add1" placeholder="Your street address 1" autocomplete="off">
+					</div>
+					<div>
+						<label for="street_add2">Street address 2</label>
+						<input type="text" name="Street address 2" id="street_add2" placeholder="Your street address 2" autocomplete="off">
+					</div>
+					<div>
+						<label for="city">City</label>
+						<input type="text" name="City" id="city" placeholder="Your City" autocomplete="off">
+					</div>
+					<div>
+						<label for="state">Province</label>
+						<input type="text" name="Province" id="state" placeholder="Your state or province" autocomplete="off">
+					</div>
+					<div>
+						<label for="zip">Postal / Zip Code</label>
+						<input type="text" name="Zip Code" id="zip" placeholder="Your Postal or Zip Code" autocomplete="off">
+					</div>
+				</div>
+				<br>
+				
+				<div class="row">
+					<div>
+						<label for="noAdult">Number of Adults</label>
+						<input class="column" type="number" name="Adults" id="noAdult" min="1" autocomplete="off">
+					</div>
+				</div>
+				
+				<div class="row">
+					<div>
+						<label for="noChild1">Number of Childdren Aged 6 - 15</label>
+						<input class="column" type="number" name="Childdren(6-15)" id="noChild1" min="1" autocomplete="off">
+					</div>
+				</div>
+				
+				<div class="row">
+					<div>
+						<label for="noChild2">Number of Childdren Aged 1 - 5</label>
+						<input class="column" type="number" name="Childdren(1-5)" id="noChild2" min="1" autocomplete="off">
+					</div>
+				</div>
+				
+				<div class="row">
+					<div>
+						<label for="arrDate">Arrival Date</label>
+						<input type="date" name="Arrival Date" id="arrDate" autocomplete="off">
+					</div>
+					<div>
+						<label for="depDate">Departure Date</label>
+						<input type="date" name="Departure Date" id="depDate" autocomplete="off">
+					</div>
+				</div>
+				<br>
+				
+				<div class="row">
+					<div>
+						<label for="issue">Details</label>
+						<textarea name="Details" id="issue" rows="3" placeholder="Descripe your issue here" autocomplete="off"></textarea>
+					</div>
+				</div>
+				
+				<button type="button" name="b_view" id="view" onclick="formValidation()">VIEW QUERY</button>	
+			</form>
+		</div>
+		
+		
+		<!-- summary form -->
+		<div id="summary_container">
+			<h1>Query Form</h1>
+			<p>Have any suggestion or question? Drop us a message.</p>
+			
+			<p>Name:  <span id="summary_name"></span></p>
+			<p>Email:  <span id="summary_email"></span></p>
+			<p>Subject:  <span id="summary_subject"></span></p>
+			<p>Contact Number:  <span id="summary_cn"></span></p><br>
+			<h4 id="summaryh4">Address</h4>
+			<p>Street address 1:  <span id="summary_add1"></span></p>
+			<p>Street address 2:  <span id="summary_add2"></span></p>
+			<p>City:  <span id="summary_city"></span></p>
+			<p>State / Province:  <span id="summary_state"></span></p>
+			<p>Postal / Zip Code:  <span id="summary_zip"></span></p><br><br>
+			<p>Number of Adults:  <span id="summary_noAdult"></span></p>
+			<p>Number of Childdren Aged 6 - 15:  <span id="summary_noChild1"></span></p>
+			<p>Number of Childdren Aged 1 - 5:<span id="summary_noChild2"></span></p><br>
+			<p>Arrival Date:  <span id="summary_arrDate"></span></p>
+			<p>Departure Date:  <span id="summary_depDate"></span></p>
+			<p>Details:  <span id="summary_issue"></span></p><br>
+			
+			<button name="b_edit" id="edit" onclick="editForm()">Edit</button>
+			<input type="submit" form="myForm" name="submit" onclick="reloadPage()" id="submit" value="SEND">
+			
+		</div>
+		
+		<div id="editor"><h4><a href="student2_editor.html">page developer</a></h4></div>
+		
+	</body>	
+</html>

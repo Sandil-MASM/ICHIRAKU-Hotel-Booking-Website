@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+<title>Additional contentpage</title>
+<link rel="stylesheet" type="text/css" href="style2.css">
+
+
+<script src="https://kit.fontawesome.com/8a08717fcf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div class="header_container">
+    
+        <div class="logo">
+            <a href="main_page.html">
+                <img src="assets2/unnamed.png" alt="logo">
+            </a>
+        </div>
+        
+        <ul class="nav_list">
+             <li><a href="main_page.html">Home</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="query_form.html">Query Form</a></li>
+            <li><a href="diagram.html">Diagram Svg</a></li>
+            <li><a href="thumbnail.html">Thumbnail images</a></li>
+            <li><a href="detail.html">Student Details</a></li>
+        </ul>
+
+    </div>
+</header>
+    <div class="wrapper">  
+<p id="marker"> here</p>        
+<div class="container">
+	<figure>
+		<img id="mainImg" src="assets2/Colombo.JPG">
+        <text id="colo"></text>
+        
+	</figure>
+
+	<ul class="grid-col">
+		<li><img id="thumb1" src="assets2/Colombo.JPG"></a></li>
+		<li><img id="thumb2" src="assets2/kandy.JPG"></a></li>
+    <li><img id="thumb3" src="assets2/Galle.JPG"></a></li>
+    <li><img id="thumb4" src="assets2/Sigiriya.JPG"></a></li>
+	</ul>
+
+    
+  
+     </div>
+
+</div>
+<h1>Sri Lanka</h1>
+<div class="p1">
+Sri Lanka is an island country located off the southern coast of India. Sri Lanka is surrounded by the Indian Ocean, Gulf of Mannar, the Palk Strait, and lies in the vicinity of India and the Maldives. The geography of Sri Lanka includes coastal plains in the north and hills and mountains in the interior. The government system is a republic; the chief of state and head of government is the president. Sri Lanka has transitioned to a market-orientated economy, but the central government is still involved in economic planning. Sri Lanka is a member of the Asia-Pacific Trade Agreement (APTA) and the South Asian Association for Regional Cooperation (SAARC).
+</div>
+<h2>Demonym</h2>
+    <p>Noun: Sri Lankan(s)</p>
+
+    <h2>Adjective: Sri Lankan</h2>
+    <h2>Capital City</h2>
+<p>Colombo (+5.5 GMT)</p>
+
+<h2>
+Sri Lanka Rupee (LKR)</h2>
+
+<h2>Languages</h2>
+<p>Sinhala (official and national language) 87%, Tamil (national language) 28.5%, English 23.8%, Note: Data represent main languages spoken by the population aged 10 years and older; shares sum to more than 100% because some respondents gave more than one answer on the census; English is commonly used in government and is referred to as the "link language" in the constitution</p>
+
+<h2>Ethnic Groups</h2>
+<p>Sinhalese 74.9%, Sri Lankan Tamil 11.2%, Sri Lankan Moors 9.2%, Indian Tamil 4.2%, other 0.5% (2012 est.)</p>
+
+
+<h2>Religions</h2>
+<p>Buddhist (official) 70.2%, Hindu 12.6%, Muslim 9.7%, Roman Catholic 6.1%, other Christian 1.3%, other 0.05%</p>
+<a href="#marker">Back to Top</a>
+<script src="js/custom.js"></script>
+<!-- footer design -->
+<footer>
+  <div class="footer_container">
+      <div class="footer_item">
+          <div class="info">
+              <h2>About us</h2><br>
+              <p>lorLorem ipsum dolor sit amet,<br> 
+              consectetur adipiscing elit.Vivamus<br>
+              quis vu lputate eros,iaculis consequat<br>
+              nisl.Nunc et suscipit urna. Integer<br> 
+              eleme ntum orci eu vehicula pretium.em</p>
+          </div>
+      </div>
+      
+      <div class="footer_item">
+          <h2>CONTACT INFO</h2>
+          <ul class="contact">
+              <a href="https://www.google.com/maps"><li class="contact_link"><i class="fa-solid fa-map-location-dot"></i>&nbsp;&nbsp;33/8, Sivapuri Road, Trincomalee<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sri Lanka</li></a>
+              <a href="https://www.google.com/gmail/about/"><li class="contact_link"><i class="fa-solid fa-envelope-open-text"></i>&nbsp;&nbsp;ichiraku@gmail.com</li></a>
+              <li class="contact_link"><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;026-2225341</li>
+              <a href="file:///C:/Users/Sujikanth/Desktop/cw%20web%20design/main_page.html"><li class="contact_link"><i class="fa-solid fa-globe"></i>&nbsp;&nbsp;ichiraku.lk</li></a>
+          </ul>	
+      </div>
+      
+      <div class="footer_item">
+          <h2>FOLLOW US</h2>
+          <br>
+          <div class="social_media">
+              <a class="sm_link" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+              <a class="sm_link" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+              <a class="sm_link" href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+              <a class="sm_link" href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+              <a class="sm_link" href="https://www.behance.net/"><i class="fa-brands fa-behance"></i></a>
+          </div>
+      </div>
+      
+  </div>
+
+</footer>
+
+</body>
+</html>
